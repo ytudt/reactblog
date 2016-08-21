@@ -1,19 +1,40 @@
 {
   "name": "reactblog",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "webpack-dev-server --config webpack.dev.config.js -w --devtool eval --progress --colors --hot --content-base src",
+     "pub":"webpack --config  webpack.pub.config.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ytudt/reactblog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ytudt/reactblog/issues"
+  },
+  "homepage": "https://github.com/ytudt/reactblog#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
+    "html-webpack-plugin": "^2.22.0",
+    "mocha": "^3.0.2",
+    "open-browser-webpack-plugin": "^0.0.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "body-parser": "~1.15.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
-    "express": "~4.13.4",
-    "jade": "~1.11.0",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0",
-    "xtemplate": "^4.5.1",
-    "xtpl": "^3.2.0"
+    "immutable": "^3.8.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
   }
 }
